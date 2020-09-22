@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+header {
+  display: flex;
+  height: fit-content;
+  padding: 0 10px;
+  background-image: repeating-linear-gradient(to right, #c4e17f 0px, #c4e17f 50px, #f7fdca 50px, #f7fdca 100px, #fad071 100px, #fad071 150px, #f0766b 150px, #f0766b 200px, #db9dbe 200px, #db9dbe 250px, #c49cdf 250px, #c49cdf 300px, #6599e2 300px, #6599e2 350px, #61c2e4 350px, #61c2e4 400px);
+  background-size: 100% 10px;
+  background-repeat: no-repeat;
+}
+header .logo {
+  height: 60px;
+  width: 60px;
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+header .navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header .navbar .navbar-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .navbar .navbar-item a {
+  width: fit-content;
+  padding: 0 30px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #000;
+}
+header .navbar .navbar-item a:hover {
+  background-image: url("../img/paw.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: right;
+  border-bottom: 1px dashed #000;
+}
+
+#conteudo .jumbotron {
+  height: 100vh;
+  display: flex;
+  background-color: #bfe4e7;
+  flex-direction: row;
+  background-image: url("../img/dog.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: bottom;
+  background-position-x: right;
+  justify-content: flex-end;
+}
+#conteudo .jumbotron .promotion {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  background-image: url("../img/bubbles.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: right;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+#conteudo .jumbotron .promotion p {
+  display: flex;
+  font-family: "Sacramento", cursive;
+  flex-direction: column;
+  font-size: 20px;
+  color: #FFF;
+}
+#conteudo .jumbotron .promotion p span {
+  font-size: 80px;
+  font-family: "Sacramento", cursive;
+  font-weight: bold;
+  color: #c49cdf;
+}
+#conteudo .jumbotron .promotion button {
+  border: none;
+  background: #f1766b;
+  border-radius: 3px;
+  width: 300px;
+  padding: 10px;
+  margin: 10px 0;
+  color: #FFF;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#conteudo .jumbotron .promotion button:hover {
+  background-color: #a5ace5;
+  cursor: pointer;
+}
+#conteudo .items {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-image: url("../img/catback.jpeg");
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: #f4e033;
+  height: 500px;
+}
+#conteudo .items .item {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#conteudo .items .item:nth-of-type(1) {
+  background-color: #f3b39f;
+}
+#conteudo .items .item:nth-of-type(1):hover {
+  background-color: #ee5f34;
+}
+#conteudo .items .item:nth-of-type(1):hover p {
+  text-shadow: 2px 0 #000;
+  border-bottom: 1px solid #000;
+}
+#conteudo .items .item:nth-of-type(2) {
+  background-color: #bce2a7;
+}
+#conteudo .items .item:nth-of-type(2):hover {
+  background-color: #8fe064;
+}
+#conteudo .items .item:nth-of-type(2):hover p {
+  text-shadow: 2px 0 #000;
+  border-bottom: 1px solid #000;
+}
+#conteudo .items .item:nth-of-type(3) {
+  background-color: #a6e2e2;
+}
+#conteudo .items .item:nth-of-type(3):hover {
+  background-color: #0ae9e9;
+}
+#conteudo .items .item:nth-of-type(3):hover p {
+  text-shadow: 2px 0 #000;
+  border-bottom: 1px solid #000;
+}
+#conteudo .items .item:nth-of-type(4) {
+  background-color: #a5ace5;
+}
+#conteudo .items .item:nth-of-type(4):hover {
+  background-color: #364cf7;
+}
+#conteudo .items .item:nth-of-type(4):hover p {
+  text-shadow: 2px 0 #000;
+  border-bottom: 1px solid #000;
+}
+
+#conteudo-servicos .servicos, #conteudo-sobre .servicos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  height: 300px;
+  font-weight: bold;
+  color: #FFF;
+  -webkit-text-stroke: 3px black;
+  padding: 20px;
+  box-sizing: content-box;
+}
+#conteudo-servicos .servicos img, #conteudo-sobre .servicos img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+#conteudo-servicos .servicos:nth-of-type(odd), #conteudo-sobre .servicos:nth-of-type(odd) {
+  background-color: #f9e7ff;
+  flex-direction: row-reverse;
+}
+#conteudo-servicos .servicos:nth-of-type(even), #conteudo-sobre .servicos:nth-of-type(even) {
+  background-color: #d5ffe3;
+}
+
+#conteudo-sobre .servicos p {
+  font-size: 20px;
+  color: #000;
+  font-weight: lighter;
+  -webkit-text-stroke: 0px black;
+}
+
+#contato {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: repeating-linear-gradient(-55deg, #f8c8d28a, #f8c8d28a 50px, #bfe4e780 50px, #bfe4e780 100px);
+}
+#contato form {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#contato form label {
+  display: flex;
+  flex-direction: column;
+}
+#contato form label input, #contato form label textarea {
+  border-radius: 3px;
+  border: 2px solid #a6e2e2;
+  height: 30px;
+}
+#contato form label textarea {
+  height: 60px;
+}
+#contato button {
+  padding: 10px;
+  margin: 30px 0;
+  color: #FFF;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  background-color: #db9dbe;
+}
+#contato .contato-detalhe {
+  display: flex;
+}
+#contato .contato-detalhe p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+#contato .contato-detalhe img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+#contato .contato-cat {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../img/grumpy-party.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+}
+
+.footer {
+  background-color: #000;
+  height: 100px;
+  width: 100%;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */
